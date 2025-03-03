@@ -27,10 +27,10 @@ module.exports = {
     createThemes(
       {
         light: {
-          primary: twColors.orange["50"], // '#e6ddda'
+          primary: twColors.orange["50"],
           secondary: twColors.zinc["500"],
-          "pop-primary": twColors.rose["500"],
-          "pop-secondary": twColors.lime["900"], // "#233319"
+          "pop-primary": twColors.pink["700"],
+          "pop-secondary": twColors.emerald["700"], 
         },
         dark: {
           primary: twColors.gray["900"],
