@@ -35,7 +35,7 @@ for (const [index, route] of [...primary_navigation, ...secondary_navigation].en
       redirect: "/not-allowed",
       roles: route.roles,
     },
-    beforeEnter: [authGuard, applyRoleRouteGuard],
+    beforeEnter: [authGuard] //, applyRoleRouteGuard],
   };
   dynamic_routes.push(routeJson);
 }
