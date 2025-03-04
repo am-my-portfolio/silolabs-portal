@@ -4,14 +4,25 @@
   <nav class="flex flex-1 flex-col">
     <ul role="list" class="flex flex-1 flex-col mt-2">
       <li v-for="(item, index) in primary_items" :key="index">
-        <div :class="['cursor-pointer', 'w-full rounded-md my-2']">
+        <div
+          :class="[
+            userHasAnyRoles(item.roles)
+              ? 'cursor-pointer'
+              : 'cursor-not-allowed hidden',
+            'w-full rounded-md my-2',
+          ]"
+        >
           <a
-            :href="`/${kebabCase(item.name)}`"
+            :href="
+              userHasAnyRoles(item.roles) ? `/${kebabCase(item.name)}` : ''
+            "
             :class="[
               item.current
                 ? 'bg-primary text-pop-secondary'
                 : 'text-pop-secondary hover:bg-pop-secondary hover:text-primary',
-
+              userHasAnyRoles(item.roles)
+                ? ''
+                : 'pointer-events-none text-secondary',
               'group flex gap-x-3 rounded-md py-2 text-base leading-6',
             ]"
           >
@@ -30,14 +41,25 @@
 
     <ul role="list" class="flex flex-col mt-auto mb-10">
       <li v-for="(item, index) in secondary_items" :key="index">
-        <div :class="['cursor-pointer', 'w-full rounded-md my-2']">
+        <div
+          :class="[
+            userHasAnyRoles(item.roles)
+              ? 'cursor-pointer'
+              : 'cursor-not-allowed hidden',
+            'w-full rounded-md my-2',
+          ]"
+        >
           <a
-            :href="`/${kebabCase(item.name)}`"
+            :href="
+              userHasAnyRoles(item.roles) ? `/${kebabCase(item.name)}` : ''
+            "
             :class="[
               item.current
                 ? 'bg-primary text-pop-secondary'
                 : 'text-pop-secondary hover:bg-pop-secondary hover:text-primary',
-
+              userHasAnyRoles(item.roles)
+                ? ''
+                : 'pointer-events-none text-secondary',
               'group flex gap-x-3 rounded-md py-2 text-base leading-6',
             ]"
           >

@@ -1,9 +1,6 @@
 <template>
   <button
-    class="text-2xl rounded-xl w-40 h-16 hover:border-transparent 
-    bg-pop-primary/80 dark:bg-pop-secondary/60
-    text-white hover:text-pop-secondary
-    dark:hover:text-primary"
+    class="w-40 h-14 text-2xl hover:border-transparent bg-pop-primary/80 dark:bg-pop-secondary/60 text-white hover:text-pop-secondary dark:hover:text-primary"
     @click="handleLogin"
   >
     Log In

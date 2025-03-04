@@ -64,7 +64,7 @@
 
     <template #pageContent>
       <div v-for="tab in tabs">
-           <KeepAlive v-if="current_tab === tab.name">
+        <KeepAlive v-if="current_tab === tab.name">
           <component
             v-if="current_tab === tab.name"
             :title="tab.name"

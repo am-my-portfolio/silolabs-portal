@@ -1,7 +1,12 @@
 import { kebabCase } from "lodash";
 import { createRouter, createWebHistory } from "vue-router";
 import { authGuard } from "@auth0/auth0-vue";
-import { primary_navigation, secondary_navigation, user_navigation,applyRoleRouteGuard } from "@/helpers";
+import {
+  primary_navigation,
+  secondary_navigation,
+  user_navigation,
+  applyRoleRouteGuard,
+} from "@/helpers";
 
 const NotAllowed = () => import("@/views/common/NotAllowed.vue");
 const NotFoundPage = () => import("@/views/common/NotFound.vue");
@@ -26,7 +31,10 @@ const static_routes = [
 ];
 
 const dynamic_routes = [];
-for (const [index, route] of [...primary_navigation, ...secondary_navigation].entries()) {
+for (const [index, route] of [
+  ...primary_navigation,
+  ...secondary_navigation,
+].entries()) {
   const routeJson = {
     path: `/${kebabCase(route.name)}`,
     name: route.name,
@@ -35,7 +43,7 @@ for (const [index, route] of [...primary_navigation, ...secondary_navigation].en
       redirect: "/not-allowed",
       roles: route.roles,
     },
-    beforeEnter: [authGuard] //, applyRoleRouteGuard],
+    beforeEnter: [authGuard], //, applyRoleRouteGuard],
   };
   dynamic_routes.push(routeJson);
 }

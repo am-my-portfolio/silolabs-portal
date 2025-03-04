@@ -1,4 +1,4 @@
-const { createThemes } = require("tw-colors"); 
+const { createThemes } = require("tw-colors");
 const esmRequire = require("esm")(module);
 const twColors = require("tailwindcss/colors");
 const twForms = require("@tailwindcss/forms")({
@@ -14,7 +14,7 @@ module.exports = {
         bruno: ["Bruno Ace"], // https://fonts.google.com/specimen/Bruno+Ace
         oxanium: ["Oxanium"], // doesnt work
         genos: ["Genos"],
-        cousine: ["Cousine"], 
+        cousine: ["Cousine"],
         orbitron: ["Orbitron"], // https://fonts.google.com/specimen/Orbitron?classification=Display&stroke=Sans+Serif
         montserrat: ["Montserrat"], // https://fonts.google.com/specimen/Montserrat
       },
@@ -28,9 +28,9 @@ module.exports = {
       {
         light: {
           primary: twColors.orange["50"],
-          secondary: twColors.zinc["500"],
+          secondary: twColors.zinc["900"],
           "pop-primary": twColors.pink["700"],
-          "pop-secondary": twColors.emerald["700"], 
+          "pop-secondary": twColors.emerald["700"],
         },
         dark: {
           primary: twColors.gray["900"],

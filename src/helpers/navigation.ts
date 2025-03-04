@@ -42,7 +42,8 @@ export const primary_navigation: Item[] = [
   {
     page: "Page2",
     name: "Vendor Management",
-    description: "Manage vendors, check their expertise and product/service list",
+    description:
+      "Manage vendors, check their expertise and product/service list",
     icon: "fa-solid fa-user-shield", // user-gear, user-secret
     current: false,
     roles: [AllRoles.SUPER_ADMIN, AllRoles.VENDOR],
@@ -169,11 +170,7 @@ export const primary_navigation: Item[] = [
     description: "Manage users, check their roles and connections",
     icon: "fa-solid fa-calendar-check",
     current: false,
-    roles: [
-      AllRoles.SUPER_ADMIN,
-      AllRoles.VENDOR,
-      AllRoles.CONSUMER,
-    ],
+    roles: [AllRoles.SUPER_ADMIN, AllRoles.VENDOR, AllRoles.CONSUMER],
     items: [
       {
         page: "Tab1",
@@ -197,11 +194,7 @@ export const primary_navigation: Item[] = [
     description: "Manage users, check their roles and connections",
     icon: "fa-solid fa-circle-dollar-to-slot", // regular fa-money-bill-1, solid: money-check-dollar, dollar-sign, hand-holdinig-dollar
     current: false,
-    roles: [
-      AllRoles.SUPER_ADMIN,
-      AllRoles.VENDOR,
-      AllRoles.CONSUMER,
-    ],
+    roles: [AllRoles.SUPER_ADMIN, AllRoles.VENDOR, AllRoles.CONSUMER],
     items: [
       {
         page: "Tab1",
@@ -222,11 +215,7 @@ export const secondary_navigation = [
     description: "Manage users, check their roles and connections",
     icon: "fa-solid fa-headphones-simple",
     current: false,
-    roles: [
-      AllRoles.SUPER_ADMIN,
-      AllRoles.VENDOR,
-      AllRoles.CONSUMER,
-    ],
+    roles: [AllRoles.SUPER_ADMIN, AllRoles.VENDOR, AllRoles.CONSUMER],
     items: [
       {
         page: "Tab1",
@@ -258,11 +247,7 @@ export const secondary_navigation = [
     description: "Manage users, check their roles and connections",
     icon: "fa-solid fa-money-bill-trend-up",
     current: false,
-    roles: [
-      AllRoles.SUPER_ADMIN,
-      AllRoles.VENDOR,
-      AllRoles.CONSUMER,
-    ],
+    roles: [AllRoles.SUPER_ADMIN, AllRoles.VENDOR, AllRoles.CONSUMER],
     items: [
       {
         page: "Tab1",
