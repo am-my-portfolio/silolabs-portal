@@ -8,23 +8,23 @@
           data
         </h1>
 
-        <div class="flex space-x-12 text-pop-secondary">
+        <div class="flex space-x-12 text-pop-primary">
           <i
-            class="fa-brands fa-galactic-senate text-6xl hover:text-pop-primary"
+            class="fa-brands fa-galactic-senate text-6xl hover:text-pop-secondary"
           ></i>
-          <i class="fa-brands fa-fulcrum text-6xl hover:text-pop-primary"></i>
+          <i class="fa-brands fa-fulcrum text-6xl hover:text-pop-secondary"></i>
           <i
-            class="fa-brands fa-swift text-6xl hover:text-pop-primary hidden lg:flex"
-          ></i>
-          <i
-            class="fa-brands fa-studiovinari text-6xl hover:text-pop-primary"
+            class="fa-brands fa-swift text-6xl hover:text-pop-secondary hidden lg:flex"
           ></i>
           <i
-            class="fa-brands fa-yammer text-6xl hover:text-pop-primary hidden lg:flex"
+            class="fa-brands fa-studiovinari text-6xl hover:text-pop-secondary"
           ></i>
-          <i class="fa-brands fa-napster text-6xl hover:text-pop-primary"></i>
           <i
-            class="fa-brands fa-suse text-6xl hover:text-pop-primary hidden lg:flex"
+            class="fa-brands fa-yammer text-6xl hover:text-pop-secondary hidden lg:flex"
+          ></i>
+          <i class="fa-brands fa-napster text-6xl hover:text-pop-secondary"></i>
+          <i
+            class="fa-brands fa-suse text-6xl hover:text-pop-secondary hidden lg:flex"
           ></i>
         </div>
 
