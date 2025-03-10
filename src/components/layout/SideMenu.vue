@@ -4,9 +4,9 @@
   >
     <div class="flex m-2 shrink-0 justify-left">
       <img
-        src="/logo.png"
+        src="/background.png"
         alt="logo"
-        class="h-24 rounded-md bg-pop-secondary/80 dark:bg-pop-secondary/60"
+        class="h-20 rounded-md bg-pop-secondary/80 dark:bg-pop-primary"
       />
     </div>
 

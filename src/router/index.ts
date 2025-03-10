@@ -38,7 +38,7 @@ for (const [index, route] of [
   const routeJson = {
     path: `/${kebabCase(route.name)}`,
     name: route.name,
-    component: () => import(`@/views/${route.page}.vue`),
+    component: () => import(`@/views/${route.name.replace(/ /g, "")}.vue`),
     meta: {
       redirect: "/not-allowed",
       roles: route.roles,
@@ -52,7 +52,7 @@ for (const route of user_navigation) {
   const routeJson = {
     path: `/${route.name.toLowerCase()}`,
     name: route.name,
-    component: () => import(`@/views/${route.name.replace(" ", "")}.vue`),
+    component: () => import(`@/views/${route.name.replace(/ /g, "")}.vue`),
     beforeEnter: [authGuard],
   };
   dynamic_routes.push(routeJson);

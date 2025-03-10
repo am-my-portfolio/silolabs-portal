@@ -35,7 +35,7 @@ module.exports = {
         dark: {
           primary: twColors.gray["900"],
           secondary: twColors.gray["200"],
-          "pop-primary": twColors.pink["700"],
+          "pop-primary": twColors.pink["600"],
           "pop-secondary": twColors.gray["400"],
         },
       },
