@@ -1,8 +1,8 @@
 <template>
   <div class="flex mt-36 justify-center items-center">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-10 items-center">
       <!-- Left Content -->
-      <div class="space-y-6">
+      <div class="col-span-3 space-y-6">
         <h1 class="text-6xl font-bold text-pop-secondary leading-tight">
           Discover reputable medical and research institutes interested in you
           data
@@ -45,11 +45,11 @@
       </div>
 
       <!-- Right Image -->
-      <div class="relative">
+      <div class="col-span-2">
         <img
           src="/logo.png"
           alt="logo"
-          class="w-[56vw] md:w-[22vw] 3xl:w-[6vw] border-8 border-pop-secondary rounded-full object-cover bg-pop-secondary/50 dark:bg-pop-primary"
+          class="w-full border-8 border-pop-secondary rounded-full object-cover bg-pop-secondary/50 dark:bg-pop-primary"
         />
       </div>
     </div>
