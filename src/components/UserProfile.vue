@@ -28,11 +28,9 @@
       <div v-else class="mt-6 text-primary">
         <p>@{{ user.nickname }} | 29 | Fr</p>
         <p>WCIF friendly</p>
-        <p>
-          <span v-if="user['lazer.io/roles']" class="text-pop-primary"
-            >Roles:
-          </span>
-          {{ user["lazer.io/roles"] }}
+        <p v-if="user['sam.co/roles']">
+          <span class="text-pop-primary">Roles: </span>
+          {{ user["sam.co/roles"] }}
         </p>
       </div>
     </div>
@@ -40,7 +38,7 @@
     <div
       class="flex w-full mt-4 p-4 justify-around text-pop-primary border-pop-primary border-t-2"
     >
-      <button class="hover:text-primary/70">
+      <button v-if="isAuthenticated" class="hover:text-primary/70">
         <i class="fas fa-home text-2xl"></i>
       </button>
       <button class="hover:text-pop-primary/70">
@@ -57,7 +55,9 @@
 </template>
 
 <script setup lang="ts">
-import { User } from "@auth0/auth0-vue";
+import { User, useAuth0 } from "@auth0/auth0-vue";
+
+const { isAuthenticated } = useAuth0();
 
 defineProps<{
   user: User;
