@@ -3,7 +3,7 @@
     <div class="mt-6 text-left">
       <i
         :class="item.icon"
-        class="text-5xl mx-4 text-pop-primary/80 shrink-0"
+        class="text-5xl mx-4 text-pop-primary shrink-0"
         aria-hidden="true"
       ></i>
     </div>

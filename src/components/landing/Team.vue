@@ -1,37 +1,35 @@
 <template>
-  <div class="flex flex-col mt-24 justify-center items-center">
-    <!-- Left Content -->
-    <div class="mt-12 p-6 text-center">
-      <h1 class="text-5xl font-bold text-pop-secondary leading-tight">
-        Meet Our Founding Team
-      </h1>
-      <p class="text-secondary text-xl">
+  <div class="mt-24">
+    <RowLayout>
+      <template #titleCentered> Meet Our Founding Team </template>
+
+      <template #description>
         With expertise ranging from Startup Strategy, Data Science and Health,
         and Software Engineering, our Founding team is well positioned to
         realize this idea to its full potential.
-      </p>
-    </div>
+      </template>
 
-    <!-- Right Image -->
-    <div class="">
-      <ul
-        role="list"
-        class="w-full grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-24 px-4 pt-24 pb-12 rounded-md"
-      >
-        <li
-          v-for="person in team"
-          :key="person.email"
-          class="flex flex-col p-4 divide-y divide-secondary rounded-md bg-primary/60 shadow"
+      <template #content>
+        <ul
+          role="list"
+          class="w-full grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-24 px-4 pt-24 pb-12 rounded-md"
         >
-          <UserProfile :user="person" />
-        </li>
-      </ul>
-    </div>
+          <li
+            v-for="person in team"
+            :key="person.email"
+            class="flex flex-col p-1 divide-y divide-secondary rounded-md bg-pop-secondary shadow"
+          >
+            <UserProfile :user="person" />
+          </li>
+        </ul>
+      </template>
+    </RowLayout>
   </div>
 </template>
 
 <script setup lang="ts">
 import UserProfile from "@/components/UserProfile.vue";
+import RowLayout from "@/components/layout/widget/RowLayout.vue";
 
 const team = [
   {

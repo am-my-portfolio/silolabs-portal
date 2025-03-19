@@ -1,38 +1,38 @@
 <template>
-  <div class="flex flex-col w-full mt-24 justify-center items-center">
-    <div class="w-full mt-12 p-6 text-center">
-      <h1 class="text-5xl font-bold text-pop-secondary leading-tight">
-        The Solution
-      </h1>
-      <p class="text-secondary text-xl">
-        SiloLabs: Empowering Cancer Patients to Monetize Their Data
-      </p>
+  <div class="mt-24">
+    <RowLayout>
+      <template #titleRight> The Solution </template>
 
-      <p class="mt-6 text-secondary/50 text-md">
+      <template #subTitleRight>
+        SiloLabs: Empowering Cancer Patients to Monetize Their Data
+      </template>
+
+      <template #description>
         SiloLabs bridges traditional and decentralized finance, creating a fair,
         patient-first data economy leveraging blockchain technology so those in
         need finally benefit from the data they create.
-      </p>
-    </div>
+      </template>
 
-    <div class="">
-      <ul
-        role="list"
-        class="w-full grid grid-cols-1 md:grid-cols-4 gap-x-2 rounded-md"
-      >
-        <li
-          v-for="item in items"
-          class="flex flex-col p-4 divide-y divide-secondary rounded-md bg-primary/60 shadow"
+      <template #content>
+        <ul
+          role="list"
+          class="w-full grid grid-cols-1 md:grid-cols-4 gap-x-2 rounded-md"
         >
-          <SolutionCard :item="item" />
-        </li>
-      </ul>
-    </div>
+          <li
+            v-for="item in items"
+            class="flex flex-col p-4 divide-y divide-secondary rounded-md bg-primary/60 shadow"
+          >
+            <SolutionCard :item="item" />
+          </li>
+        </ul>
+      </template>
+    </RowLayout>
   </div>
 </template>
 
 <script setup lang="ts">
 import SolutionCard from "./SolutionCard.vue";
+import RowLayout from "@/components/layout/widget/RowLayout.vue";
 
 const items = [
   {

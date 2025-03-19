@@ -1,50 +1,56 @@
 <template>
-  <div class="flex flex-col mt-24 justify-center items-center">
-    <div id="title">
-      <h1 class="text-5xl font-bold text-pop-secondary leading-tight">
-        The Problem
-      </h1>
+  <div class="mt-24">
+    <RowLayout>
+      <template #titleLeft> The Problem </template>
 
-      <h2 class="text-secondary/50 text-2xl">
+      <template #subTitleLeft>
         Cancer Patients Are the Backbone of a $50 Billion Data Market - But They
         Get Nothing.
-      </h2>
-    </div>
+      </template>
 
-    <div id="grid" class="flex mt-12 justify-center items-center">
-      <div class="grid grid-cols-1 md:grid-cols-6 mt-12 gap-10 items-center">
-        <!-- Left Content -->
-        <div class="col-span-3">
-          <p class="text-secondary text-xl">
-            Every cancer patient's journey produces an enormous amount of
-            valuable data - scans, lab results, genetic profiles, and treatment
-            outcomes. This data fuels a $50+ billion global health data market,
-            driving pharmaceutical breakthroughs and clinical advancements.
-          </p>
-        </div>
+      <template #content>
+        <ColumnLayout>
+          <template #title></template>
+          <template #subTitle> </template>
+          <template #description></template>
 
-        <!-- Right Image -->
-        <div class="col-span-3">
-          <div
-            v-for="item in reasons"
-            class="flex flex-col p-4 divide-y divide-secondary rounded-md text-secondary/50 shadow"
-          >
-            <div class="flex group">
-              <i
-                :class="item.icon"
-                class="text-3xl mx-4 text-pop-primary/80 shrink-0"
-                aria-hidden="true"
-              ></i>
-              {{ item.summary }}
+          <template #leftContent>
+            <p class="text-secondary text-xl">
+              Every cancer patient's journey produces an enormous amount of
+              valuable data - scans, lab results, genetic profiles, and
+              treatment outcomes. This data fuels a $50+ billion global health
+              data market, driving pharmaceutical breakthroughs and clinical
+              advancements.
+            </p>
+          </template>
+
+          <template #rightContent>
+            <div class="col-span-3">
+              <div
+                v-for="item in reasons"
+                class="flex flex-col p-4 divide-y divide-secondary rounded-md text-secondary/50 shadow"
+              >
+                <div class="flex group">
+                  <i
+                    :class="item.icon"
+                    class="text-3xl mx-4 text-pop-primary shrink-0"
+                    aria-hidden="true"
+                  ></i>
+                  {{ item.summary }}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </template>
+        </ColumnLayout>
+      </template>
+    </RowLayout>
   </div>
 </template>
 
 <script setup lang="ts">
+import ColumnLayout from "@/components/layout/widget/ColumnLayout.vue";
+import RowLayout from "@/components/layout/widget/RowLayout.vue";
+
 const reasons = [
   {
     summary:

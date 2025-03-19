@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col h-full items-center text-secondary bg-pop-secondary/80 rounded-md"
+    class="flex flex-col h-full items-center text-secondary bg-primary rounded-md"
   >
     <div
       class="-mt-20 border-8 rounded-full overflow-hidden border-pop-secondary"
@@ -22,9 +22,10 @@
     <div
       class="w-3/4 h-full mt-4 mb-12 text-center space-y-1 border-pop-primary border-t-2"
     >
-      <div v-if="user.summary" class="mt-6 text-primary">
+      <div v-if="user.summary" class="mt-6 text-secondary">
         {{ user.summary }}
       </div>
+
       <div v-else class="mt-6 text-primary">
         <p>@{{ user.nickname }} | 29 | Fr</p>
         <p>WCIF friendly</p>
@@ -41,13 +42,13 @@
       <button v-if="isAuthenticated" class="hover:text-primary/70">
         <i class="fas fa-home text-2xl"></i>
       </button>
-      <button class="hover:text-pop-primary/70">
+      <button class="hover:text-pop-primary">
         <i class="fas fa-envelope text-2xl"></i>
       </button>
-      <button class="hover:text-pop-primary/70">
+      <button class="hover:text-pop-primary">
         <i class="fab fa-linkedin text-2xl"></i>
       </button>
-      <button class="hover:text-pop-primary/70">
+      <button class="hover:text-pop-primary">
         <i class="fas fa-phone text-2xl"></i>
       </button>
     </div>
