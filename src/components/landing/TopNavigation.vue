@@ -14,9 +14,10 @@
 
     <!-- Navigation Links (Hidden on Small Screens) -->
     <div class="hidden md:flex space-x-8 text-pop-secondary font-medium">
-      <a href="#" class="hover:text-pop-primary transition">Home</a>
-      <a href="#" class="hover:text-pop-primary transition">Shop</a>
       <a href="#" class="hover:text-pop-primary transition">About</a>
+      <a href="#" class="hover:text-pop-primary transition">Team</a>
+      <a href="#" class="hover:text-pop-primary transition">Problem</a>
+      <a href="#" class="hover:text-pop-primary transition">Solution</a>
       <a href="#" class="hover:text-pop-primary transition">Contact</a>
       <ThemeToggle class="ml-24" />
     </div>

@@ -1,9 +1,9 @@
 <template>
   <div
-    class="flex flex-col items-center text-secondary bg-pop-secondary/80 rounded-md"
+    class="flex flex-col h-full items-center text-secondary bg-pop-secondary/80 rounded-md"
   >
     <div
-      class="w-36 h-36 -mt-20 border-8 rounded-full overflow-hidden border-pop-secondary"
+      class="-mt-20 border-8 rounded-full overflow-hidden border-pop-secondary"
     >
       <img
         v-if="user.picture"
@@ -20,7 +20,7 @@
       {{ user.email }}
     </p>
     <div
-      class="w-3/4 mt-4 mb-12 text-center space-y-1 border-pop-primary border-t-2"
+      class="w-3/4 h-full mt-4 mb-12 text-center space-y-1 border-pop-primary border-t-2"
     >
       <div v-if="user.summary" class="mt-6 text-primary">
         {{ user.summary }}

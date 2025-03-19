@@ -1,11 +1,10 @@
 <template>
-  <div class="flex mt-36 justify-center items-center">
+  <div class="flex mt-24 justify-center items-center">
     <div class="grid grid-cols-1 md:grid-cols-5 gap-10 items-center">
       <!-- Left Content -->
       <div class="col-span-3 space-y-6">
         <h1 class="text-6xl font-bold text-pop-secondary leading-tight">
-          Discover reputable medical and research institutes interested in you
-          data
+          Empowering Patients. Monetizing Data. Transforming Life Sciences.
         </h1>
 
         <div class="flex space-x-12 text-pop-primary">
@@ -29,13 +28,14 @@
         </div>
 
         <p class="text-secondary/50 text-2xl">
-          Our blockchain enabled, zero-trust data sharing platform enables you
-          to capitalize on your data, on your terms
+          SiloLabs bridges traditional and decentralized finance, creating a
+          fair, patient-first data economy leveraging blockchain technology so
+          those in need finally benefit from the data they create and own.
         </p>
         <button
           class="px-6 py-3 rounded-lg text-lg font-semibold bg-pop-secondary/50 hover:bg-pop-primary text-secondary hover:text-primary transition shadow-lg"
         >
-          GET STARTED
+          REQUEST A DEMO
         </button>
         <div class="mt-5">
           <p class="text-pop-primary mb-2">
