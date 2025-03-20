@@ -11,4 +11,8 @@ export const enum Events {
 
   // Select events
   SELECT = "select",
+
+  SCROLL_TO = "scroll:to",
 }
+
+// https://www.freecodecamp.org/news/how-event-handling-works-in-vue-3-guide-for-devs/

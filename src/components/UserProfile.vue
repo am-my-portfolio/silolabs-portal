@@ -26,7 +26,7 @@
         {{ user.summary }}
       </div>
 
-      <div v-else class="mt-6 text-primary">
+      <div v-else class="mt-6 text-secondary">
         <p>@{{ user.nickname }} | 29 | Fr</p>
         <p>WCIF friendly</p>
         <p v-if="user['sam.co/roles']">

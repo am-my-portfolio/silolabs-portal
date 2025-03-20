@@ -26,6 +26,18 @@ module.exports = {
     // https://palettes.shecodes.io/
     createThemes(
       {
+        // light: {
+        //   primary: twColors.orange["50"],
+        //   secondary: twColors.zinc["900"],
+        //   "pop-primary": twColors.pink["700"],
+        //   "pop-secondary": twColors.emerald["700"],
+        // },
+        // dark: {
+        //   primary: twColors.gray["900"],
+        //   secondary: twColors.gray["200"],
+        //   "pop-primary": twColors.pink["600"],
+        //   "pop-secondary": twColors.gray["400"],
+        // },
         light: {
           primary: twColors.orange["50"],
           secondary: twColors.zinc["900"],
@@ -33,10 +45,10 @@ module.exports = {
           "pop-secondary": twColors.emerald["700"],
         },
         dark: {
-          primary: twColors.gray["900"],
-          secondary: twColors.gray["200"],
-          "pop-primary": twColors.pink["600"],
-          "pop-secondary": twColors.gray["400"],
+          primary: twColors.black["950"],
+          secondary: twColors.slate["50"],
+          "pop-primary": twColors.amber["600"], // 600 or 800
+          "pop-secondary": twColors.slate["400"],
         },
       },
       { defaultTheme: "light" },
