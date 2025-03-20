@@ -39,10 +39,10 @@ module.exports = {
         //   "pop-secondary": twColors.gray["400"],
         // },
         light: {
-          primary: twColors.orange["50"],
+          primary: twColors.white,
           secondary: twColors.zinc["900"],
-          "pop-primary": twColors.pink["700"],
-          "pop-secondary": twColors.emerald["700"],
+          "pop-primary": twColors.sky["700"],
+          "pop-secondary": twColors.sky["700"],
         },
         dark: {
           primary: twColors.black["950"],
