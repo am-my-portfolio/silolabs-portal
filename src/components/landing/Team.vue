@@ -17,7 +17,7 @@
           <li
             v-for="person in team"
             :key="person.email"
-            class="flex flex-col p-1 divide-y divide-secondary rounded-md bg-pop-secondary shadow"
+            class="flex flex-col p-2 divide-y divide-secondary rounded-md bg-pop-secondary shadow"
           >
             <UserProfile :user="person" />
           </li>

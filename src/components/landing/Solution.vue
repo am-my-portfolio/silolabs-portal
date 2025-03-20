@@ -16,11 +16,11 @@
       <template #content>
         <ul
           role="list"
-          class="w-full grid grid-cols-1 md:grid-cols-4 gap-x-2 rounded-md"
+          class="grid grid-cols-1 md:grid-cols-4 gap-x-2 rounded-md"
         >
           <li
             v-for="item in items"
-            class="flex flex-col p-4 divide-y divide-secondary rounded-md bg-primary/60 shadow"
+            class="flex flex-col p-2 divide-y divide-secondary rounded-md shadow bg-pop-secondary"
           >
             <SolutionCard :item="item" />
           </li>
